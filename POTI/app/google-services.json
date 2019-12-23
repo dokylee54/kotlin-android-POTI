@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "29613937747",
+    "firebase_url": "https://dream-note-5c56a.firebaseio.com",
+    "project_id": "dream-note-5c56a",
+    "storage_bucket": "dream-note-5c56a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29613937747:android:069922806e82d0a66fe2a6",
+        "android_client_info": {
+          "package_name": "dokylee.dream.dream_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29613937747-d1ldqb8dpt6ngfr6rjae18t1pj5i27hn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dokylee.dream.dream_note",
+            "certificate_hash": "242fdefb7fbe15e7f445211ddd7c282c69ce3b96"
+          }
+        },
+        {
+          "client_id": "29613937747-iq2i8gqarlb4g640732v69jrdqe7gn2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC9ctXGDKiPSXSPWhTuYSandMYxbFyKYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29613937747-iq2i8gqarlb4g640732v69jrdqe7gn2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/page_lr_padding"
+            android:text="POTI"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="@dimen/page_lr_padding_half"
+            android:layout_marginBottom="@dimen/page_lr_padding_half"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/page_lr_padding_half"
+            android:text="피드백을 남겨주세요 😆"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/page_lr_padding"/>
+
+    <RatingBar
+            android:id="@+id/feedback_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/page_lr_padding_half"/>
+
+    <EditText
+            android:id="@+id/feedback_content"
+            android:hint="..."
+            android:ellipsize="start"
+            android:gravity="center"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:textColorHint="@color/lightGray"
+            android:textSize="@dimen/body_font_size"
+            android:textColor="@color/black_100"
+            android:padding="12dp"
+            android:background="@drawable/edit_content_box"
+            android:lines="3"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:scrollbars="vertical"
+            android:theme="@style/EditTheme"/>
+
+
+
+</LinearLayout>

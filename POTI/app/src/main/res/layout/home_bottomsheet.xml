@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <View
+                android:layout_width="65dp"
+                android:layout_height="8dp"
+                android:background="@drawable/round_line"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/page_lr_padding_half"
+                android:text="PHOTO TICKET"
+                android:textStyle="bold"
+                android:textSize="@dimen/page_lr_padding"
+                android:textAlignment="center"
+                android:paddingLeft="@dimen/drawable_padding"
+                android:paddingRight="@dimen/drawable_padding"
+                android:paddingTop="@dimen/drawable_padding_half"
+                android:textColor="@color/black_100"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+            <Button
+                    android:id="@+id/select_but"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_buttons"
+                    android:drawableLeft="@drawable/ic_dslr_camera_24px"
+                    android:paddingLeft="12dp"
+                    android:layout_toRightOf="@+id/myphoto_img_card"
+                    android:layout_marginLeft="-50dp"/>
+
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/myphoto_img_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/page_lr_padding_half"
+                    app:cardCornerRadius="@dimen/card_corner_radius"
+                    app:cardElevation="0dp">
+
+                <ImageView
+                        android:id="@+id/myphoto_img"
+                        android:layout_width="@dimen/small_card_width"
+                        android:layout_height="@dimen/small_card_height"
+                        android:background="@drawable/edit_content_box"
+                        android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <EditText
+                android:id="@+id/myphoto_movie_name"
+                android:hint="The name of a movie"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:inputType="textVisiblePassword"
+                android:textColorHint="@color/lightGray"
+                android:textSize="15dp"
+                android:textColor="@color/black_100"
+                android:padding="12dp"
+                android:background="@drawable/edit_content_box"
+                android:maxLength="40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:theme="@style/EditTheme"/>
+
+        <EditText
+                android:id="@+id/myphoto_des"
+                android:hint="Best sentence in this movie"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:inputType="textVisiblePassword|textMultiLine"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/lightGray"
+                android:textSize="15dp"
+                android:textColor="@color/black_100"
+                android:maxLines="2"
+                android:maxLength="150"
+                android:padding="12dp"
+                android:background="@drawable/edit_content_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:theme="@style/EditTheme"/>
+
+        <Button
+                android:id="@+id/upload_but"
+                android:layout_height="50dp"
+                android:layout_width="150dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttons"
+                android:text="UPLOAD"
+                android:textSize="@dimen/body_font_size"
+                android:textStyle="bold"
+                android:textColor="@color/white_100"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white_100"
+              android:padding="@dimen/page_lr_padding"
+              android:layout_gravity="center">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:text="@string/app_name"
+            android:textSize="@dimen/page_td_padding"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/page_lr_padding_half"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title_font_size"
+            android:text="SIGN UP"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="100dp"/>
+
+    <EditText
+            android:id="@+id/signup_id"
+            android:hint="Email"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="@color/lightGray"
+            android:textSize="@dimen/body_font_size"
+            android:textColor="@color/black_100"
+            android:padding="12dp"
+            android:background="@drawable/edit_content_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/page_lr_padding_half"
+            android:theme="@style/EditTheme"/>
+
+    <EditText
+            android:id="@+id/signup_password1"
+            android:hint="Password"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="@color/lightGray"
+            android:textSize="@dimen/body_font_size"
+            android:textColor="@color/black_100"
+            android:padding="12dp"
+            android:background="@drawable/edit_content_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/page_lr_padding_half"
+            android:theme="@style/EditTheme"/>
+
+    <EditText
+            android:id="@+id/signup_password2"
+            android:hint="Repeat Password"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:inputType="textVisiblePassword"
+            android:textColorHint="@color/lightGray"
+            android:textSize="@dimen/body_font_size"
+            android:textColor="@color/black_100"
+            android:padding="12dp"
+            android:background="@drawable/edit_content_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/page_lr_padding"
+            android:theme="@style/EditTheme"/>
+
+    <Button
+            android:id="@+id/signup_but"
+            android:text="Sign Up"
+            android:textColor="@color/white_100"
+            android:textAllCaps="false"
+            android:textSize="@dimen/body_font_size"
+            android:background="@drawable/buttons"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/page_lr_padding"/>
+
+
+
+</LinearLayout>

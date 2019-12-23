@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">POTI</string>
+    <string name="title_home">Home</string>
+    <string name="title_createplanet">POTI Feed</string>
+    <string name="title_chatbot">Chatbot</string>
+    <string name="title_profile">Profile</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_pwd">Password</string>
+    <string name="login">Sign In</string>
+    <string name="logout">Sign Out</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_content">Write your DREAM here</string>
+    <string name="write_note">DREAM NOTE</string>
+    <string name="create_planet">Create</string>
+
+
+
+
+</resources>

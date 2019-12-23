@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/white_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/myphoto_screenshot_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_100"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/page_lr_padding_half"
+                    android:textColor="@color/black_100"
+                    android:textStyle="bold"
+                    android:text="@string/app_name"
+                    android:textSize="@dimen/page_td_padding"
+                    android:textAlignment="center"/>
+
+            <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/myphoto_list">
+            </include>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/myphoto_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_100"
+                android:textStyle="bold"
+                android:textSize="@dimen/body_font_size"
+                android:textAlignment="center"/>
+
+        <!--<Button-->
+                <!--android:id="@+id/screenshot_but"-->
+                <!--android:text="Screenshot"-->
+                <!--android:textColor="@color/white_100"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textSize="@dimen/page_lr_padding_half"-->
+                <!--android:drawableLeft="@drawable/ic_dslr_camera_24px"-->
+                <!--android:paddingLeft="15dp"-->
+                <!--android:background="@drawable/buttons"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="@dimen/page_td_padding"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/home_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/popup"
+            android:paddingTop="18dp"
+            android:paddingLeft="@dimen/drawable_padding_half"
+            android:paddingRight="@dimen/drawable_padding_half"
+            android:elevation="2dp"
+            app:behavior_peekHeight="90dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/home_bottomsheet">
+        </include>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

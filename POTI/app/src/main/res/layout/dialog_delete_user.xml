@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_box">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/page_lr_padding"
+            android:text="POTI"
+            android:textColor="@color/black_100"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="@dimen/page_lr_padding_half"
+            android:layout_marginBottom="@dimen/page_lr_padding_half"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/page_lr_padding_half"
+            android:text="삭제를 계속 진행하시나요?😢"
+            android:textAlignment="center"/>
+
+</LinearLayout>
