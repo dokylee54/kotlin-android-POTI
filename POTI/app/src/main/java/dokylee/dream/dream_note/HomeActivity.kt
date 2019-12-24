@@ -123,7 +123,7 @@ class HomeActivity : Fragment() {
                         }
                         dataList.reverse()
 
-                        val dialogView = layoutInflater.inflate(R.layout.dialog_photodetail, null)
+                        val dialogView = LayoutInflater.from(activity).inflate(R.layout.dialog_photodetail, null)
                         val rvAdapter = myphotoRvAdapter(requireContext(), dialogView, dataList)
                         recyclerView.adapter = rvAdapter
 
@@ -360,6 +360,7 @@ class HomeActivity : Fragment() {
                                 myphoto_des.setText(null)
                                 myphoto_movie_name.setText(null)
                                 myphoto_img.setImageBitmap(null)
+                                FilePathUri = null
                                 bottomSheetBehavior.setState(STATE_COLLAPSED)
 
                                 //hide keyboard
